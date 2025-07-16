@@ -7,25 +7,24 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detect scroll and change navbar background
+  // Detect scroll and update header background
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll function
+  // Smooth scroll to section
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
     setIsOpen(false);
 
-    // const section = document.getElementById(sectionId);
-    // if (section) {
-    //   section.scrollIntoView({ behavior: "smooth" });
-    // }
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const menuItems = [
@@ -40,8 +39,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
         isScrolled
-          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+          ? "bg-[#050414]/80 backdrop-blur-md shadow-md"
+          : "bg-[#050414]/40 backdrop-blur-md"
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">

@@ -52,9 +52,10 @@ const About = () => {
             tackling challenges head-on. What sets me apart is my drive for
             continuous growth, clean code and a strong belief in crafting
             meaningful digital experiences.
-          </p>{/* Resume Button */}
+          </p>
+          {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1_pLl2wjYVCU-wnqXIhjhYr0YC0SJXvwv/view?usp=sharing"
+            href="https://drive.google.com/file/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

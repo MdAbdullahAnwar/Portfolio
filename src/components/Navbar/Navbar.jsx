@@ -9,12 +9,32 @@ const Navbar = () => {
 
   // Detect scroll and update header background
   useEffect(() => {
+    const sectionIds = menuItems.map((item) => item.id);
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      let current = "";
+      sectionIds.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 120 && rect.bottom >= 120) {
+            current = id;
+          }
+        }
+      });
+
+      if (current !== activeSection) {
+        setActiveSection(current);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // initialize on mount
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [activeSection]);
 
   // Smooth scroll to section
   const handleMenuItemClick = (sectionId) => {

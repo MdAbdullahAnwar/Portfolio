@@ -29,8 +29,21 @@ html {
     top: 0;
     left: 0;
     height: 100%;
-    width: 60%;
-    background-image: radial-gradient(ellipse at left, rgba(130,69,236,0.25), rgba(130,69,236,0.05), transparent);
+    width: 80%;
+    background-image: radial-gradient(ellipse at left, rgba(130, 69, 236, 0.25), rgba(130, 69, 236, 0.05), transparent);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(40px);
+  }
+
+  .fade-right-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    background-image: radial-gradient(ellipse at right, rgba(130, 69, 236, 0.25), rgba(130, 69, 236, 0.05), transparent);
     pointer-events: none;
     z-index: 0;
     filter: blur(40px);

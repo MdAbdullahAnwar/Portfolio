@@ -18,6 +18,9 @@ export default {
         "left-fade-purple":
           "radial-gradient(ellipse at left, rgba(130,69,236,0.2) 0%, rgba(130,69,236,0.1) 25%, rgba(130,69,236,0) 50%)",
       },
+      screens: {
+        nav: "920px",
+      },
     },
   },
   plugins: [],

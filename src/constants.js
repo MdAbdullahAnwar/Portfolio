@@ -172,7 +172,7 @@ export const experiences = [
     id: 3,
     img: aqmenzLogo,
     role: "AI/ML Intern",
-    company: "Varcons Technologies",
+    company: "Aqmenz Automation",
     date: "Apr 2022 – July 2022",
     desc: "Worked on a data-driven AI/ML project analyzing and modeling COVID-19 data. Applied statistical methods and machine learning algorithms to predict case trends and evaluate intervention impacts. Focused on time series forecasting, EDA and classification models for real-world health analytics applications.",
     skills: [
@@ -215,7 +215,7 @@ export const education = [
     date: "Apr 2015 - March 2016",
     grade: "90.2%",
     desc: "Learned Java programming fundamentals and built logic-building skills during high school, forming the base of my dev journey.",
-    degree: "CBSE (X) - Science with Computer Applications",
+    degree: "ICSE (X) - Science with Computer Applications",
   },
 ];
 

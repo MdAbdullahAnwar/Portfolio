@@ -42,10 +42,10 @@ html {
     top: 0;
     right: 0;
     height: 100%;
-    width: 80%;
-    background-image: radial-gradient(ellipse at right, rgba(130, 69, 236, 0.25), rgba(130, 69, 236, 0.05), transparent);
+    width: 30%;
+    background-image: radial-gradient(ellipse at right, rgba(255, 80, 80, 0.25), rgba(255, 0, 0, 0.05), transparent);
     pointer-events: none;
     z-index: 0;
-    filter: blur(40px);
+    filter: blur(10px);
   }
 }

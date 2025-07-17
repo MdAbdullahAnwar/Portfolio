@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 const Skills = () => (
   <section
     id="skills"
-    className="relative z-10 py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans clip-path-custom bg-[#0d0b20] bg-skills-gradient bg-blend-overlay fade-right-overlay"
+    className="relative z-10 py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-[#0d0b20] bg-skills-gradient bg-blend-overlay fade-right-overlay"
   >
     {/* Section Title */}
     <div className="text-center mb-8">

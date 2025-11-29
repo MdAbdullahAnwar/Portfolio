@@ -14,17 +14,19 @@ import nextjsLogo from "./assets/tech_logo/nextjs.png";
 import shadcnLogo from "./assets/tech_logo/ShadCN.png";
 import materialuiLogo from "./assets/tech_logo/materialui.png";
 
-// BaaS
+// Backend
+import nodejsLogo from "./assets/tech_logo/nodejs.png";
+import expressjsLogo from "./assets/tech_logo/expressjs.webp";
+import mysqlLogo from "./assets/tech_logo/mysql.png";
+import sequelizeLogo from "./assets/tech_logo/sequelize.webp";
+import mongodbLogo from "./assets/tech_logo/mongodb.webp";
+import mongooseLogo from "./assets/tech_logo/mongoose.webp";
 import firebaseLogo from "./assets/tech_logo/firebase.png";
 import supabaseLogo from "./assets/tech_logo/Supabase.jpg";
 import inngestLogo from "./assets/tech_logo/Inngest.png";
-import prismaLogo from "./assets/tech_logo/Prisma.png";
-import clerkLogo from "./assets/tech_logo/Clerk.png";
 import firestoreLogo from "./assets/tech_logo/Firestore.jpeg";
-import mysqlLogo from "./assets/tech_logo/mysql.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
-import cronjobLogo from "./assets/tech_logo/CronHub.webp";
-import arcjetLogo from "./assets/tech_logo/Arcjet.webp";
+import prismaLogo from "./assets/tech_logo/Prisma.png";
 
 // Languages
 import cLogo from "./assets/tech_logo/c.png";
@@ -41,8 +43,10 @@ import figmaLogo from "./assets/tech_logo/figma.png";
 import viteLogo from "./assets/tech_logo/vite.png";
 import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
+import renderLogo from "./assets/tech_logo/render.webp";
 
 // Experience Logos
+import apanaLogo from "./assets/company_logo/apana.jpeg";
 import sharpenerLogo from "./assets/company_logo/Sharpener.png";
 import cognizantLogo from "./assets/company_logo/Cognizant.png";
 import varconsLogo from "./assets/company_logo/Varcons.png";
@@ -53,12 +57,12 @@ import internationalLogo from "./assets/education_logo/InternationalSchool.png";
 import smvitLogo from "./assets/education_logo/SMVIT.png";
 
 // Project Logos
-import welthLogo from "./assets/work_logo/Welth.png";
+import expenseWiseLogo from "./assets/work_logo/LandingPage.png";
 import foodrushLogo from "./assets/work_logo/FoodRush.png";
 import mailmateLogo from "./assets/work_logo/MailMate.png";
 import chatverseLogo from "./assets/work_logo/ChatVerse.png";
 import mobilemartLogo from "./assets/work_logo/MobileMart.png";
-import expensetrackerLogo from "./assets/work_logo/ExpenseTracker.png";
+import welthLogo from "./assets/work_logo/Welth.png";
 
 // Skills Data
 export const SkillsInfo = [
@@ -82,16 +86,18 @@ export const SkillsInfo = [
   {
     title: "Backend",
     skills: [
+      { name: "Node JS", logo: nodejsLogo },
+      { name: "Express JS", logo: expressjsLogo },
+      { name: "MySQL", logo: mysqlLogo },
+      { name: "Sequelize", logo: sequelizeLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "Mongoose", logo: mongooseLogo },
       { name: "Firebase", logo: firebaseLogo },
       { name: "Supabase", logo: supabaseLogo },
       { name: "Inngest", logo: inngestLogo },
-      { name: "Prisma", logo: prismaLogo },
-      { name: "Clerk", logo: clerkLogo },
       { name: "Firestore", logo: firestoreLogo },
-      { name: "MySQL", logo: mysqlLogo },
       { name: "PostgreSQL", logo: postgreLogo },
-      { name: "Cron", logo: cronjobLogo },
-      { name: "Arcjet", logo: arcjetLogo },
+      { name: "Prisma", logo: prismaLogo },
     ],
   },
   {
@@ -116,6 +122,7 @@ export const SkillsInfo = [
       { name: "Vite", logo: viteLogo },
       { name: "Netlify", logo: netlifyLogo },
       { name: "Vercel", logo: vercelLogo },
+      { name: "Render", logo: renderLogo },
     ],
   },
 ];
@@ -124,15 +131,14 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: sharpenerLogo,
-    role: "Frontend Developer Apprentice",
-    company: "Sharpener",
-    date: "June 2024 – Present",
-    desc: "Currently undergoing an intensive frontend development apprenticeship focused on building scalable, real-world projects using JavaScript, React, and Redux. Gained hands-on experience with component-based architecture, RESTful API integration, state management, and responsive UI development, while collaborating via GitHub workflows.",
+    img: apanaLogo,
+    role: "Frontend Developer",
+    company: "Apana Time",
+    date: "September 2025 – Present",
+    desc: "Developed and maintained the frontend for a Gym Management SaaS platform with responsive, scalable UI. Built an E‑Commerce platform and Admin Panel, enhancing product management and customer experience. Contributed to ERP product modules and independently delivered the full business website frontend. Collaborated with the backend team to integrate RESTful APIs, streamline data handling, and improve overall performance.",
     skills: [
       "HTML",
       "CSS",
-      "Postman",
       "JavaScript",
       "TypeScript",
       "Bootstrap",
@@ -140,10 +146,41 @@ export const experiences = [
       "React JS",
       "Redux",
       "Next JS",
+      "REST APIs",
+      "Postman",
+      "GitHub",
     ],
   },
   {
     id: 1,
+    img: sharpenerLogo,
+    role: "Full Stack Developer Apprentice",
+    company: "Sharpener",
+    date: "June 2024 – August 2025",
+    desc: "Completed a full-stack development apprenticeship building scalable, real-world applications. Gained experience in component-based architecture, RESTful API integration, state management, and responsive UI on the frontend, while also working with Node.js, Express, and databases on the backend. Collaborated via GitHub workflows, implemented authentication, optimized performance, and deployed projects using Vercel and Render.",
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Bootstrap",
+      "Tailwind CSS",
+      "React JS",
+      "Redux",
+      "Next JS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "PostgreSQL",
+      "REST APIs",
+      "Postman",
+      "GitHub",
+      "Vercel",
+      "Render",
+    ],
+  },
+  {
+    id: 2,
     img: cognizantLogo,
     role: "React Developer",
     company: "Cognizant Technology Solutions",
@@ -160,7 +197,7 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: varconsLogo,
     role: "Fullstack Developer Intern",
     company: "Varcons Technologies",
@@ -169,7 +206,7 @@ export const experiences = [
     skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "Django", "Figma"],
   },
   {
-    id: 3,
+    id: 4,
     img: aqmenzLogo,
     role: "AI/ML Intern",
     company: "Aqmenz Automation",
@@ -223,26 +260,26 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Welth - AI Finance Manager",
+    title: "ExpenseWise - Smart Expense Tracker with Premium Features",
     description:
-      "Wealth is a full-stack AI-powered finance management platform built using Next.js, Prisma, React Hook Form, Zod, Clerk, ShadCN UI and Inngest. It empowers users to track income and expenses, scan receipts using AI, analyze spending patterns and receive smart financial insights via email — Wealth offers a fully responsive, secure and visually stunning financial management experience.",
-    image: welthLogo,
+      "ExpenseWise is a full-stack expense management platform with dual interfaces. Users can track expenses/income, set budgets, manage bank accounts, scan receipts with AI, and analyze spending patterns. Premium features include advanced analytics, category breakdowns, leaderboards, and PDF exports. Admin capabilities include Razorpay payment integration, Gemini AI-powered insights, monthly email reports, and Arcjet rate limiting for security.",
+    image: expenseWiseLogo,
     tags: [
-      "Next JS",
-      "Clerk",
-      "Supabase",
-      "Inngest",
-      "Prisma",
-      "CronJob",
-      "Arcjet",
+      "React JS",
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Sequelize",
+      "JWT Auth",
+      "Razorpay",
       "Gemini AI",
-      "ShadCN UI",
-      "Resend",
-      "React-Email",
-      "Recharts",
+      "Arcjet",
+      "Tailwind CSS",
+      "Redux Toolkit",
     ],
-    github: "https://github.com/MdAbdullahAnwar/Welth-AI_Finance_Platform",
-    webapp: "https://welth-ai-finance-platform-pi.vercel.app/",
+    github:
+      "https://github.com/MdAbdullahAnwar/ExpenseWise-Smart_Expense_Tracker",
+    webapp: "https://expense-wise-smart-expense-tracker.vercel.app/",
   },
   {
     id: 1,
@@ -292,19 +329,41 @@ export const projects = [
   {
     id: 4,
     title: "MobileMart - E-Commerce Store",
-    description: "MobileMart is a fully responsive e-commerce web app for buying smartphones, built with React, Vite, Firebase Authentication, and CrudCrud API. It features user authentication, cart and wishlist management, a contact form, and a mobile-first design — offering users a smooth and secure shopping experience across devices.",
+    description:
+      "MobileMart is a fully responsive e-commerce web app for buying smartphones, built with React, Vite, Firebase Authentication, and CrudCrud API. It features user authentication, cart and wishlist management, a contact form, and a mobile-first design — offering users a smooth and secure shopping experience across devices.",
     image: mobilemartLogo,
-    tags: ["React JS", "Context API", "CSS Modules", "Bootstrap", "Firebase", "Crud-Crud"],
+    tags: [
+      "React JS",
+      "Context API",
+      "CSS Modules",
+      "Bootstrap",
+      "Firebase",
+      "Crud-Crud",
+    ],
     github: "https://github.com/MdAbdullahAnwar/E-Commerce-Site",
     webapp: "https://e-commerce-site-opal-tau.vercel.app/",
   },
   {
     id: 5,
-    title: "Expense Tracker - Budget App",
-    description: "Expense Tracker is a modern React app with Firebase for real-time data and auth. Users can sign up, manage profiles, categorize expenses, and unlock premium features like dark mode and CSV export — built using Context API and tested with React Testing Library and Jest.",
-    image: expensetrackerLogo,
-    tags: ["React JS", "Redux", "CSS", "Firebase", "Jest"],
-    github: "https://github.com/MdAbdullahAnwar/Expense-Tracker-Site",
-    webapp: "https://expense-tracker-site-xi.vercel.app/",
+    title: "Welth - AI Finance Manager",
+    description:
+      "Wealth is a full-stack AI-powered finance management platform built using Next.js, Prisma, React Hook Form, Zod, Clerk, ShadCN UI and Inngest. It empowers users to track income and expenses, scan receipts using AI, analyze spending patterns and receive smart financial insights via email — Wealth offers a fully responsive, secure and visually stunning financial management experience.",
+    image: welthLogo,
+    tags: [
+      "Next JS",
+      "Clerk",
+      "Supabase",
+      "Inngest",
+      "Prisma",
+      "CronJob",
+      "Arcjet",
+      "Gemini AI",
+      "ShadCN UI",
+      "Resend",
+      "React-Email",
+      "Recharts",
+    ],
+    github: "https://github.com/MdAbdullahAnwar/Welth-AI_Finance_Platform",
+    webapp: "https://welth-ai-finance-platform-pi.vercel.app/",
   },
 ];

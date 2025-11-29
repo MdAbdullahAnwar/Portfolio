@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/Profile.jpg';
+import Tilt from "react-parallax-tilt";
+import profileImage from "../../assets/Profile.jpg";
 
 const About = () => {
   return (
@@ -43,15 +43,16 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I’m a passionate Frontend Developer and AI enthusiast, always eager
-            to push boundaries in the ever-evolving tech world. I specialize in
-            building intuitive, responsive and user-focused interfaces that
-            balance creativity and functionality. Currently exploring backend
-            development to become a well-rounded full-stack developer, I love
-            diving into new frameworks, experimenting with AI tools and
-            tackling challenges head-on. What sets me apart is my drive for
-            continuous growth, clean code and a strong belief in crafting
-            meaningful digital experiences.
+            I’m a passionate Full-Stack Developer and AI enthusiast, driven to
+            push boundaries in the ever‑evolving tech world. My core strength
+            lies in building intuitive, responsive, and user‑focused interfaces
+            that balance creativity with functionality. While I specialize in
+            frontend technologies, I’m also well‑versed in backend development,
+            giving me the versatility to contribute across the full stack. I
+            enjoy exploring new frameworks, experimenting with AI tools, and
+            tackling challenges head‑on. What sets me apart is my commitment to
+            continuous growth, writing clean and maintainable code, and a strong
+            belief in crafting meaningful digital experiences.
           </p>
           {/* Resume Button */}
           <a
@@ -60,14 +61,14 @@ const About = () => {
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+              background: "linear-gradient(90deg, #8245ec, #a855f7)",
+              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
             }}
           >
             DOWNLOAD CV
           </a>
         </div>
-        
+
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end ml-6">
           <Tilt

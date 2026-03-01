@@ -46,6 +46,7 @@ import vercelLogo from "./assets/tech_logo/vercel.png";
 import renderLogo from "./assets/tech_logo/render.webp";
 
 // Experience Logos
+import zyvaLogo from "./assets/company_logo/Zyva.jpeg";
 import apanaLogo from "./assets/company_logo/apana.jpeg";
 import sharpenerLogo from "./assets/company_logo/Sharpener.png";
 import cognizantLogo from "./assets/company_logo/Cognizant.png";
@@ -131,17 +132,39 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img: zyvaLogo,
+    role: "Full Stack Developer",
+    company: "Zyva Chime PVT LTD",
+    date: "January 2026 – Present",
+    desc: "1. AttendEase: Enterprise Workforce Management System:\n• Built production-ready HRMS with geo-fenced attendance (100m radius validation)\n• Automated workforce logic using Cron Jobs (auto-absent marking, session logouts)\n• Implemented 4-tier RBAC system with dynamic UI rendering and API protection\n• Developed intelligent analytics with custom calendar grid engine\n• Created advanced approval workflows with document governance for auditing.\n\n2. NvaraMedia: Digital Agency Platform:\n• Rebuilt WordPress site into high-conversion custom engine\n• Built NvaraAI Chatbot with lead qualification scoring system\n• Developed pro-grade blog engine with ReactQuill live preview\n• Created Pinterest-style portfolio with smart pagination\n• Implemented lead-to-CRM pipeline replacing expensive third-party tools\n• Achieved performance-first architecture reducing load times significantly",
+    skills: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma",
+      "Drizzle",
+      "Postman",
+      "Docker",
+      "Jest",
+      "Supertest",
+      "React Testing Library",
+      "Playwright",
+    ],
+  },
+  {
+    id: 1,
     img: apanaLogo,
     role: "Frontend Developer",
     company: "Apana Time",
-    date: "September 2025 – Present",
-    desc: "Developed and maintained the frontend for a Gym Management SaaS platform with responsive, scalable UI. Built an E‑Commerce platform and Admin Panel, enhancing product management and customer experience. Contributed to ERP product modules and independently delivered the full business website frontend. Collaborated with the backend team to integrate RESTful APIs, streamline data handling, and improve overall performance.",
+    date: "September 2025 – December 2025",
+    desc: "1. Gym Management SaaS Platform:\n• Developed responsive frontend for multi-tenant gym management system\n• Implemented member dashboard with attendance tracking and class bookings\n• Built trainer management interface with scheduling and client tracking\n• Created billing module with subscription management\n• Integrated RESTful APIs for real-time data synchronization\n\n2. E-Commerce Platform with Admin Panel:\n• Built complete e-commerce frontend with product catalog and filtering\n• Implemented shopping cart, checkout flow, and payment integration\n• Created Admin Panel with product management and inventory tracking\n• Developed analytics dashboard with sales metrics and reporting\n• Delivered responsive business website with modern UI/UX",
     skills: [
-      "HTML",
-      "CSS",
       "JavaScript",
       "TypeScript",
-      "Bootstrap",
       "Tailwind CSS",
       "React JS",
       "Redux",
@@ -152,12 +175,12 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     img: sharpenerLogo,
     role: "Full Stack Developer Apprentice",
     company: "Sharpener",
     date: "June 2024 – August 2025",
-    desc: "Completed a full-stack development apprenticeship building scalable, real-world applications. Gained experience in component-based architecture, RESTful API integration, state management, and responsive UI on the frontend, while also working with Node.js, Express, and databases on the backend. Collaborated via GitHub workflows, implemented authentication, optimized performance, and deployed projects using Vercel and Render.",
+    desc: "Full-Stack Development Apprenticeship:\n• Built scalable, real-world applications with component-based architecture\n• Implemented RESTful API integration and state management\n• Worked with Node.js, Express, and databases on backend\n• Collaborated via GitHub workflows and implemented authentication\n• Optimized performance and deployed projects using Vercel and Render",
     skills: [
       "HTML",
       "CSS",
@@ -180,12 +203,12 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: cognizantLogo,
     role: "React Developer",
     company: "Cognizant Technology Solutions",
     date: "October 2023 – April 2024",
-    desc: "Trained in modern frontend technologies and best practices for scalable web applications. Worked with React.js, Redux, and Zustand for state management, implementing dynamic routing, optimized component rendering, and reusable UI patterns using Tailwind CSS.",
+    desc: "React Developer Training:\n• Trained in modern frontend technologies and best practices\n• Worked with React.js, Redux, and Zustand for state management\n• Implemented dynamic routing and optimized component rendering\n• Built reusable UI patterns using Tailwind CSS",
     skills: [
       "HTML",
       "CSS",
@@ -197,21 +220,21 @@ export const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: varconsLogo,
     role: "Fullstack Developer Intern",
     company: "Varcons Technologies",
     date: "July 2022 – October 2022",
-    desc: "Contributed to fullstack development projects using React.js for the frontend and Django for the backend. Designed and implemented responsive user interfaces, integrated REST APIs, and developed CRUD functionalities. Collaborated in UI/UX design using Figma and followed agile development workflows.",
+    desc: "Fullstack Development Projects:\n• Contributed to projects using React.js frontend and Django backend\n• Designed and implemented responsive user interfaces\n• Integrated REST APIs and developed CRUD functionalities\n• Collaborated in UI/UX design using Figma\n• Followed agile development workflows",
     skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "Django", "Figma"],
   },
   {
-    id: 4,
+    id: 5,
     img: aqmenzLogo,
     role: "AI/ML Intern",
     company: "Aqmenz Automation",
     date: "Apr 2022 – July 2022",
-    desc: "Worked on a data-driven AI/ML project analyzing and modeling COVID-19 data. Applied statistical methods and machine learning algorithms to predict case trends and evaluate intervention impacts. Focused on time series forecasting, EDA and classification models for real-world health analytics applications.",
+    desc: "AI/ML Project - COVID-19 Data Analysis:\n• Analyzed and modeled COVID-19 data using statistical methods\n• Applied machine learning algorithms to predict case trends\n• Evaluated intervention impacts with time series forecasting\n• Performed EDA and built classification models for health analytics",
     skills: [
       "Python",
       "Pandas",

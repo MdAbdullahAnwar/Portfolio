@@ -64,7 +64,30 @@ const Experience = () => {
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
+              <div className="mt-4 text-gray-400 space-y-3">
+                {experience.desc.split('\n\n').map((section, sectionIndex) => (
+                  <div key={sectionIndex}>
+                    {section.split('\n').map((line, lineIndex) => {
+                      if (line.match(/^\d+\./)) {
+                        return (
+                          <h4 key={lineIndex} className="text-white font-semibold text-lg mt-4 mb-2">
+                            {line}
+                          </h4>
+                        );
+                      } else if (line.startsWith('•')) {
+                        return (
+                          <p key={lineIndex} className="ml-4 mb-1">
+                            {line}
+                          </p>
+                        );
+                      } else if (line.trim()) {
+                        return <p key={lineIndex}>{line}</p>;
+                      }
+                      return null;
+                    })}
+                  </div>
+                ))}
+              </div>
               <div className="mt-4">
                 <h5 className="font-medium text-white">Skills:</h5>
                 <ul className="flex flex-wrap mt-2">

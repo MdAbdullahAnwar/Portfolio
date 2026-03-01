@@ -1,7 +1,7 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import Tilt from "react-parallax-tilt";
-import profileImage from "../../assets/Profile.jpg";
+import profileImage from "../../assets/Profile.jpeg";
 
 const About = () => {
   return (
@@ -26,9 +26,9 @@ const About = () => {
             <span className="text-[#8245ec]">
               <Typewriter
                 words={[
-                  "Frontend Developer",
-                  "Fullstack Explorer",
-                  "AI Enthusiast",
+                  "Full Stack Developer",
+                  "GenAI Enthusiast",
+                  "UI/UX Designer",
                   "Problem Solver",
                   "Coder",
                 ]}
@@ -43,20 +43,14 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I’m a passionate Full-Stack Developer and AI enthusiast, driven to
-            push boundaries in the ever‑evolving tech world. My core strength
-            lies in building intuitive, responsive, and user‑focused interfaces
-            that balance creativity with functionality. While I specialize in
-            frontend technologies, I’m also well‑versed in backend development,
-            giving me the versatility to contribute across the full stack. I
-            enjoy exploring new frameworks, experimenting with AI tools, and
-            tackling challenges head‑on. What sets me apart is my commitment to
-            continuous growth, writing clean and maintainable code, and a strong
-            belief in crafting meaningful digital experiences.
+            Full-Stack Developer specializing in building intuitive,
+            user-focused interfaces. Well-versed in both frontend and backend
+            technologies. I enjoy exploring new frameworks, experimenting with
+            AI tools, and writing clean, maintainable code.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1KILjBjPv_iFa6jnisFq3K1xAhDpbF5Zt/view"
+            href="https://drive.google.com/file/d/19L91tu9ibP4Sz2EBg0jIQbQqp1-RXm3a/view"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
